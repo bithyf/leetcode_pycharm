@@ -19,5 +19,6 @@ def listtolistnode(nums):
 def printlistnode(head):
     p = head
     while p is not None:
-        print(p.val)
+        print(p.val, end=" ")
         p = p.next
+    print('')
