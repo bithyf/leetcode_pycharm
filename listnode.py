@@ -5,6 +5,14 @@ class ListNode:
         self.next = None
 
 
+class Node:
+    def __init__(self, val, prev, next, child):
+        self.val = val
+        self.prev = prev
+        self.next = next
+        self.child = child
+
+
 def listtolistnode(nums):
     head = ListNode(nums[0])
     p = head
