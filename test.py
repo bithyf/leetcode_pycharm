@@ -1,5 +1,3 @@
-def demo(f, *v):
-    print(f)
-    print(v)
-    
-demo('a','b','c','d')
+a = '12'
+b = '12'
+print(id(a) == id(b))
