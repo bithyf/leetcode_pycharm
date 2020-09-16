@@ -1,6 +1,6 @@
 def lengthOfLongestSubstring(s: str) -> int:
     if len(s) < 2:
-        return s
+        return len(s)
     maxlength = 0
     left = right = 0
     for n in s:

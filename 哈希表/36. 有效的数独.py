@@ -19,7 +19,7 @@ def isValidSudoku(board):
             if box[i // 3 * 3 + j // 3][num] == 1:
                 return False
             row[i][num] = 1
-            col[num][j] = 1
+            col[j][num] = 1
             box[i // 3 * 3 + j // 3][num] = 1
     return True
 

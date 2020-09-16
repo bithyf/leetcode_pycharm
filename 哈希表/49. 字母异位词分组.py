@@ -2,8 +2,8 @@
 def groupAnagrams(strs):
     values = dict()
     for s in strs:
-        # key = ''.join(sorted(s))
-        key = sorted(s)
+        key = ''.join(sorted(s))
+        # key = sorted(s)
         if key in values:
             values[key].append(s)
         else:

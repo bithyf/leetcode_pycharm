@@ -5,7 +5,7 @@ def inorderTraversal(self, root: TreeNode):
     num = []
     stack = []
     node = root
-    while True:
+    while node or len(stack):
         if node:
             stack.append(node)
             node = node.left
