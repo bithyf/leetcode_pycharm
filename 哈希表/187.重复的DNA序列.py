@@ -15,7 +15,7 @@ def findRepeatedDnaSequences(s: str):
         if h in seen:
             out.append(s[i:i + L])
         seen.add(h)
-    return out
+    return list(set(out))
 
 
 
